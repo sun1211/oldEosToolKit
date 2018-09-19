@@ -17,5 +17,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({hash: true, template: 'src/index.html'})
   ],
-  devServer: { contentBase: './dist', hot: true }
+  devServer: { 
+   host: '0.0.0.0',
+   hot: true,
+  }
 };
